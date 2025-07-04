@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container py-5">
-        <h1 class="mb-4 text-center">💸 Budget App</h1>
+        <h1 class="mb-4 text-center">Budget App</h1>
         <div class="row mb-4">
             <div class="col-md-6 mx-auto">
                 <form id="expense-form" class="card card-body bg-dark border-secondary shadow">
@@ -26,36 +26,36 @@
             </div>
         </div>
         <div class="row mb-4">
-            <div class="col-md-8 mx-auto">
-                <div class="card bg-dark border-secondary shadow">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <span class="h5 mb-0">Expenses</span>
-                        <button id="refresh-btn" class="btn btn-outline-light btn-sm">Refresh</button>
+            <div class="col-md-6 mx-auto">
+                <div class="card total-card shadow-lg border-0 text-center p-4 mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase fw-bold mb-2" style="letter-spacing:1px;color:#b2ffea;">Total Spent</h5>
+                        <p class="display-4 fw-bold mb-0" id="total-amount" style="color:#00e676;text-shadow:0 2px 16px #00e67655;">$0.00</p>
                     </div>
-                    <div class="card-body p-0">
-                        <table class="table table-dark table-hover mb-0" id="expenses-table">
-                            <thead>
-                                <tr>
-                                    <th>Description</th>
-                                    <th>Amount</th>
-                                    <th>Date</th>
-                                    <th>Action</th>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-10 mx-auto">
+                <div class="card bg-dark border-0 shadow-lg expense-table-card">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-transparent border-0 pb-0">
+                        <span class="h4 mb-0 fw-bold" style="color:#b2ffea;letter-spacing:1px;">Expenses</span>
+                        <button id="refresh-btn" class="btn btn-outline-info btn-sm px-3 py-1 rounded-pill fw-bold">Refresh</button>
+                    </div>
+                    <div class="card-body p-0 mt-2">
+                        <table class="table table-dark table-hover mb-0 align-middle" id="expenses-table" style="border-radius:1rem;overflow:hidden;">
+                            <thead style="background:rgba(0,255,255,0.05);">
+                                <tr style="border-bottom:2px solid #222;">
+                                    <th class="text-info text-uppercase small">Description</th>
+                                    <th class="text-info text-uppercase small">Amount</th>
+                                    <th class="text-info text-uppercase small">Date</th>
+                                    <th class="text-info text-uppercase small">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- Expenses will be inserted here -->
                             </tbody>
                         </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mx-auto">
-                <div class="card bg-dark border-secondary shadow text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">Total Spent</h5>
-                        <p class="display-6" id="total-amount">$0.00</p>
                     </div>
                 </div>
             </div>
@@ -78,10 +78,10 @@
             data.forEach(exp => {
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
-                    <td>${exp.description}</td>
-                    <td>$${parseFloat(exp.amount).toFixed(2)}</td>
-                    <td>${new Date(exp.timestamp).toLocaleString()}</td>
-                    <td><button class="btn btn-danger btn-sm delete-btn" data-description="${encodeURIComponent(exp.description)}">Delete</button></td>
+                    <td class="fw-semibold" style="color:#fff;">${exp.description}</td>
+                    <td class="fw-bold" style="color:#00e676;">$${parseFloat(exp.amount).toFixed(2)}</td>
+                    <td class="text-secondary small">${new Date(exp.timestamp).toLocaleString()}</td>
+                    <td><button class="btn btn-gradient delete-btn btn-sm px-3 py-1 rounded-pill fw-bold" data-description="${encodeURIComponent(exp.description)}">Delete</button></td>
                 `;
                 tbody.appendChild(tr);
             });

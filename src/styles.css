@@ -1,3 +1,38 @@
+.total-card {
+    background: linear-gradient(135deg, #23272b 60%, #1a222a 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0,255,128,0.10), 0 1.5px 8px 0 #00e67622;
+    border: none;
+    transition: box-shadow 0.2s;
+}
+.total-card:hover {
+    box-shadow: 0 12px 40px 0 #00e67633, 0 2px 12px 0 #00e67633;
+}
+
+.expense-table-card {
+    background: linear-gradient(120deg, #23272b 80%, #1a222a 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0,255,255,0.10), 0 1.5px 8px 0 #00e6ff22;
+    border: none;
+    transition: box-shadow 0.2s;
+}
+.expense-table-card:hover {
+    box-shadow: 0 12px 40px 0 #00e6ff33, 0 2px 12px 0 #00e6ff33;
+}
+
+/* Gradient delete button */
+.btn-gradient {
+    background: linear-gradient(90deg, #ff1744 0%, #ff8a65 100%);
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px rgba(255,23,68,0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #ff8a65 0%, #ff1744 100%);
+    color: #fff !important;
+    box-shadow: 0 4px 16px rgba(255,23,68,0.25);
+}
 body {
     background: #181a1b;
     color: #e0e0e0;
