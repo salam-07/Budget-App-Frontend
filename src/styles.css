@@ -1,3 +1,52 @@
+body.hello-kitty-theme {
+    background: #ffd1ec !important;
+}
+
+.hello-kitty-theme .card,
+.hello-kitty-theme .expense-table-card,
+.hello-kitty-theme .total-card {
+    background: rgba(255,255,255,0.85) !important;
+    border: 2px solid #ff69b4 !important;
+    box-shadow: 0 8px 32px 0 #ff69b4aa, 0 1.5px 8px 0 #ffb6c1;
+}
+
+.hello-kitty-theme .btn-primary,
+.hello-kitty-theme .btn-outline-info,
+.hello-kitty-theme .btn-gradient {
+    background: linear-gradient(90deg, #ff69b4 0%, #ffb6c1 100%) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 2px 8px #ff69b455 !important;
+}
+.hello-kitty-theme .btn-primary:hover,
+.hello-kitty-theme .btn-outline-info:hover,
+.hello-kitty-theme .btn-gradient:hover {
+    background: linear-gradient(90deg, #ffb6c1 0%, #ff69b4 100%) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 16px #ff69b4aa !important;
+}
+
+.hello-kitty-theme .card-title,
+.hello-kitty-theme .h4,
+.hello-kitty-theme .h5,
+.hello-kitty-theme .fw-bold {
+    color: #ff69b4 !important;
+    text-shadow: 0 2px 8px #ffb6c1;
+}
+
+.hello-kitty-theme #total-amount {
+    color: #ff69b4 !important;
+    text-shadow: 0 2px 16px #ffb6c1;
+}
+
+.hello-kitty-theme .table-dark {
+    background: rgba(255,255,255,0.85) !important;
+    color: #ff69b4 !important;
+}
+.hello-kitty-theme .table-dark th,
+.hello-kitty-theme .table-dark td {
+    border-color: #ffb6c1 !important;
+}
 .total-card {
     background: linear-gradient(135deg, #23272b 60%, #1a222a 100%);
     border-radius: 1.5rem;
