@@ -144,8 +144,22 @@
     border-color: #ff69b4 !important;
     box-shadow: 0 0 0 0.2rem #ffb6c155 !important;
 }
-body.hello-kitty-theme {
+
+body.hello-kitty-theme, .hello-kitty-theme .premium-bg {
     background: #ffd1ec !important;
+    background-color: #ffd1ec !important;
+}
+
+#hello-kitty-bg {
+    background: url('https://th.bing.com/th/id/R.f0df2e823c7335dc6dca984e08ffbd48?rik=znrSekiaVNvlxQ&pid=ImgRaw&r=0') center center / cover no-repeat fixed, #ffd1ec !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.18;
 }
 
 .hello-kitty-theme .card,
