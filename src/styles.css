@@ -1,3 +1,32 @@
+.hello-kitty-theme .table-dark,
+.hello-kitty-theme .expense-table-card,
+.hello-kitty-theme .total-card,
+.hello-kitty-theme .card,
+.hello-kitty-theme .bg-dark {
+    background: rgba(255,255,255,0.92) !important;
+    color: #ff69b4 !important;
+    border-color: #ffb6c1 !important;
+}
+
+.hello-kitty-theme .table-dark th,
+.hello-kitty-theme .table-dark td {
+    border-color: #ffb6c1 !important;
+    color: #ff69b4 !important;
+}
+
+.hello-kitty-theme input.form-control,
+.hello-kitty-theme select.form-control {
+    background: #fff0f6 !important;
+    color: #ff69b4 !important;
+    border: 1.5px solid #ffb6c1 !important;
+    box-shadow: 0 2px 8px #ffb6c133 !important;
+}
+.hello-kitty-theme input.form-control:focus {
+    background: #fff0f6 !important;
+    color: #ff69b4 !important;
+    border-color: #ff69b4 !important;
+    box-shadow: 0 0 0 0.2rem #ffb6c155 !important;
+}
 body.hello-kitty-theme {
     background: #ffd1ec !important;
 }
