@@ -151,7 +151,7 @@ body.hello-kitty-theme, .hello-kitty-theme .premium-bg {
 }
 
 #hello-kitty-bg {
-    background: url('https://th.bing.com/th/id/R.f0df2e823c7335dc6dca984e08ffbd48?rik=znrSekiaVNvlxQ&pid=ImgRaw&r=0') center center / cover no-repeat fixed, #ffd1ec !important;
+    background: url('https://th.bing.com/th/id/R.f0df2e823c7335dc6dca984e08ffbd48?rik=znrSekiaVNvlxQ&pid=ImgRaw&r=0') center center / cover no-repeat fixed !important;
     position: fixed;
     top: 0;
     left: 0;
