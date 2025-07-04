@@ -1,3 +1,81 @@
+/* Premium/Elegant Modern Theme */
+.premium-bg {
+    background: linear-gradient(135deg, #181a1b 0%, #161617 60%, #1a222a 100%);
+    min-height: 100vh;
+}
+.premium-card {
+    border-radius: 1.5rem !important;
+    box-shadow: 0 8px 32px 0 rgba(0,255,128,0.10), 0 1.5px 8px 0 #00e67622, 0 2px 16px 0 #b2ffea22;
+    border: none !important;
+    background: rgba(35,39,43,0.98) !important;
+    transition: box-shadow 0.2s, background 0.2s;
+}
+.premium-card:hover {
+    box-shadow: 0 12px 40px 0 #00e67633, 0 2px 12px 0 #00e67633, 0 4px 24px 0 #b2ffea33;
+}
+.premium-heading {
+    letter-spacing: 2px;
+    color: #b2ffea;
+    text-shadow: 0 2px 16px #00e67655, 0 1px 0 #fff;
+}
+.premium-label {
+    color: #b2ffea !important;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #00e67633;
+}
+.premium-amount {
+    color: #00e676 !important;
+    text-shadow: 0 2px 16px #00e67655;
+}
+.premium-btn {
+    border-radius: 2rem !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #b2ffea33;
+}
+.premium-table {
+    border-radius: 1rem !important;
+    overflow: hidden !important;
+    background: rgba(35,39,43,0.98) !important;
+}
+.premium-input {
+    border-radius: 1rem !important;
+    background: #23272b !important;
+    color: #e0e0e0 !important;
+    border: 1.5px solid #343a40 !important;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    box-shadow: 0 2px 8px #00e67611;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.premium-input:focus {
+    border-color: #00e676 !important;
+    box-shadow: 0 0 0 0.2rem #00e67633 !important;
+    color: #fff !important;
+}
+@media (max-width: 767.98px) {
+    .premium-card, .total-card, .expense-table-card {
+        border-radius: 1rem !important;
+        padding: 1rem !important;
+    }
+    .premium-heading {
+        font-size: 2rem !important;
+    }
+    .premium-label {
+        font-size: 1rem !important;
+    }
+    .premium-amount {
+        font-size: 2rem !important;
+    }
+    .premium-input {
+        font-size: 1rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+    .premium-table th, .premium-table td {
+        font-size: 0.95rem !important;
+        padding: 0.5rem 0.5rem !important;
+    }
+}
 .btn-success {
     background: linear-gradient(90deg, #00e676 0%, #b2ffea 100%);
     color: #fff !important;
