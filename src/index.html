@@ -39,6 +39,7 @@
                                     <th>Description</th>
                                     <th>Amount</th>
                                     <th>Date</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -80,9 +81,28 @@
                     <td>${exp.description}</td>
                     <td>$${parseFloat(exp.amount).toFixed(2)}</td>
                     <td>${new Date(exp.timestamp).toLocaleString()}</td>
+                    <td><button class="btn btn-danger btn-sm delete-btn" data-description="${encodeURIComponent(exp.description)}">Delete</button></td>
                 `;
                 tbody.appendChild(tr);
             });
+            // Add event listeners for delete buttons
+            document.querySelectorAll('.delete-btn').forEach(btn => {
+                btn.addEventListener('click', async function() {
+                    const description = decodeURIComponent(this.getAttribute('data-description'));
+                    await deleteExpense(description);
+                });
+            });
+        // Delete function: deletes all expenses with a given description
+        async function deleteExpense(description) {
+            if (!confirm(`Delete all expenses with description: "${description}"?`)) return;
+            await fetch('https://budget-fn-enbrdmceb0dtgnc5.canadacentral-01.azurewebsites.net/api/deleteexpense', {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ description })
+            });
+            fetchExpenses();
+            fetchTotal();
+        }
         }
 
         async function fetchTotal() {
