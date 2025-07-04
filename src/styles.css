@@ -145,9 +145,10 @@
     box-shadow: 0 0 0 0.2rem #ffb6c155 !important;
 }
 
+
 body.hello-kitty-theme, .hello-kitty-theme .premium-bg {
-    background: #ffd1ec !important;
-    background-color: #ffd1ec !important;
+    background: none !important;
+    background-color: transparent !important;
 }
 
 #hello-kitty-bg {
@@ -159,7 +160,7 @@ body.hello-kitty-theme, .hello-kitty-theme .premium-bg {
     height: 100vh;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.18;
+    opacity: 1;
 }
 
 .hello-kitty-theme .card,
