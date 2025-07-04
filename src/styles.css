@@ -1,3 +1,24 @@
+.btn-success {
+    background: linear-gradient(90deg, #00e676 0%, #b2ffea 100%);
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px #00e67655;
+    transition: background 0.2s;
+}
+.btn-success:hover {
+    background: linear-gradient(90deg, #b2ffea 0%, #00e676 100%);
+    color: #fff !important;
+    box-shadow: 0 4px 16px #00e676aa;
+}
+
+.text-success {
+    color: #00c853 !important;
+    font-weight: bold;
+}
+.text-danger {
+    color: #d50000 !important;
+    font-weight: bold;
+}
 
 .hello-kitty-theme .table-dark,
 .hello-kitty-theme .table,
