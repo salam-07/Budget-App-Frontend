@@ -1,17 +1,35 @@
+
 .hello-kitty-theme .table-dark,
+.hello-kitty-theme .table,
 .hello-kitty-theme .expense-table-card,
 .hello-kitty-theme .total-card,
 .hello-kitty-theme .card,
 .hello-kitty-theme .bg-dark {
-    background: rgba(255,255,255,0.92) !important;
+    background: rgba(255,255,255,0.97) !important;
     color: #ff69b4 !important;
     border-color: #ffb6c1 !important;
 }
 
+.hello-kitty-theme #expenses-table thead,
+.hello-kitty-theme #expenses-table thead tr,
+.hello-kitty-theme #expenses-table thead th {
+    background: #ffe4f3 !important;
+    color: #ff69b4 !important;
+    border-bottom: 2px solid #ffb6c1 !important;
+}
+
 .hello-kitty-theme .table-dark th,
-.hello-kitty-theme .table-dark td {
+.hello-kitty-theme .table-dark td,
+.hello-kitty-theme .table th,
+.hello-kitty-theme .table td {
     border-color: #ffb6c1 !important;
     color: #ff69b4 !important;
+    background: transparent !important;
+}
+.hello-kitty-theme h1,
+.hello-kitty-theme .main-heading {
+    color: #ff69b4 !important;
+    text-shadow: 0 2px 8px #fff0f6, 0 1px 0 #fff;
 }
 
 .hello-kitty-theme input.form-control,
